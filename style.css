@@ -1,0 +1,350 @@
+/*
+
+------ Mobile First
+
+*/
+
+html{
+	background:#eee;
+}
+
+body {
+	width: 100%;
+	margin:0 auto;
+	background: white;
+}
+
+img{
+	width: 100%;
+	display: block;
+
+}
+
+p{
+	color: #4a525f;
+	margin: 0;
+}
+
+#logo p {
+	display: block;
+	position: absolute;
+	top: 1%;
+	color: white;
+	font-size: 2.2em;
+	font-style: italic;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+#apply-btn{
+	margin-top: 13px;
+}
+
+/*
+
+------ Top Menu
+
+*/
+
+ul{
+	width: 100%;
+	padding: 0;
+	list-style: none!important;
+}
+
+li {
+	text-align: center;
+	padding: 5px;
+	background: #4a525f;
+	font-style: italic;
+	border-bottom: 2px solid white;
+}
+
+li, li a {
+	text-decoration: none;
+	color: white;
+}
+
+li:hover, li a:hover {
+	background: #393535;
+}
+
+/*
+
+------ Top menu end
+
+*/
+
+header {
+	position: relative;
+}
+
+header p {
+	position: absolute;
+	bottom: 60%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.6em;
+}
+
+#applyy-btn {
+	bottom: 50%;
+}
+#apply-btn a {
+	padding: 2px;
+	text-decoration: none;
+	background: #8393ca;
+	color: white;
+	border-radius: 5px;
+}
+
+#apply-btn a:hover {
+	background: #3e486a;
+}
+
+.row1-1 {
+	width:; 100%;
+	float: left;
+	margin-bottom: 2%;
+}
+.buttons{
+	width: 30%;
+	float: left;
+	padding-left: 2.5%;
+	text-align: center;
+}
+
+.buttons a{
+	text-decoration: none;
+}
+.row1-2{
+	width: 100%;
+	background: #E0E0EB;
+	font-size: 1.6em;
+	text-align: center;
+	padding: 4% 0;
+	display: inline-block;
+}
+
+
+.row2{
+	background: #a864a8;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.row2 img{
+	width: 40%;
+	display: inline-block;
+}
+
+.row2 p {
+	font-size: 1.4em;
+	padding-top: 3%;
+	padding:3% 0;
+	color: white;
+}
+
+.row3-1 {
+	display: inline-block;
+	width: 100%;
+	background: #E0E0EB;
+	font-size: 1.6em;
+	text-align: center;
+	padding: 4% 0;
+}
+
+span a{
+	text-decoration: underline;
+	color: #ec008c;
+}
+
+footer p {
+	text-align: center;
+	padding-bottom: 2%;
+	background: white;
+}
+
+/* Devices > 600px *
+	Top menu
+*/
+
+@media screen and (min-width: 600px)  {
+
+
+
+header ul {
+	position: absolute;
+	top:8%;
+	text-align: center;
+	background: white;
+
+}
+
+header li, header li a {
+	display: inline-block;
+	background-color: transparent;
+	border-bottom: none;
+	color: #4a525f;
+	padding: 5px;
+}
+
+header li {
+	border-right: 1px solid #4a525f;
+}
+
+header li:last-child {
+	boder-right:none;
+}
+
+header li:hover, header li a:hover{
+	background-color: #d8cccc;
+}
+
+/* Top Menu End*/
+
+header p {
+	bottom: 40%
+	font-size: 2em;
+}
+
+#apply-btn {
+	bottom: 30%;
+}
+
+.row1-1{
+	width: 50%;
+	margin-top: 2%;
+}
+
+row1-2 {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+
+.row1-2 p {
+	max-width: 60%;
+}
+
+.row2 p{
+	font-size: 15px;
+	text-align: center;
+}
+
+.sarah, .tom{
+	width: 50%;
+	float: left;
+	padding-bottom:2%;
+}
+
+.row3{
+	display: flex;
+}
+
+.row3-1 {
+	display: flex;
+	flex:1;
+	justify-content: center;
+	align-items: center;
+	background:white;
+	font-size: 14px;
+}
+
+.row3-1 p {
+	max-width: 60%;
+}
+
+.row3-2{
+	flex:3;
+}
+
+/* Footer Menu */
+
+footer ul {
+	text-align: center;
+	background: #8393ca;
+	margin: 0;
+
+}
+
+footer li, footer li a {
+	display: inline-block;
+	background-color: transparent;
+	border-bottom: none;
+	padding: 5px;
+}
+
+footer li {
+	border-right: 1px solid #4a525f;
+}
+
+
+footer li:last-child{
+	border-right: none;
+}
+
+footer li:hover, footer li a:hover{
+
+	background: #3e486a;
+}
+
+footer p {
+	padding-top: 2%;
+	background: #e0e0eb;
+	font-size: 1.2em;
+}
+
+}
+
+
+/* Devices > 900px *
+	Top menu
+*/
+
+@media screen and (min-width: 900px){
+	body{
+		max-width: 1100px;
+	}
+	header ul{
+		max-width: 1100px;
+		background-color: transparent;
+		text-align: right;
+		top: 1%;
+		right: 2%;
+	}
+
+	header p {
+		font-size: 2.2em;
+		font-weight: bold;
+		max-width: 1100px;
+	}
+
+
+	#logo p {
+		text-align: left;
+		padding-left: 1%;
+	}
+
+	.row1-1 {
+		font-size: 1.2em;
+	}
+
+	.row1-2, .row2 p, .row3-1 {
+		font-size: 15px;
+	}
+
+	.row2 p {
+		display: none;
+	}
+
+	footer p {
+		font-size: 1.5em;
+	}
+
+
+}
